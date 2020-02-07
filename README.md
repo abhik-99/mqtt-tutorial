@@ -9,6 +9,7 @@
  
  ## Paying with MQTT
  Contains basic codes with the use of [Mosquitto](test.mosquitto.org) as the *Broker*.
+ For reference go to this [Link](http://www.steves-internet-guide.com/).
 
 ## Cloud IOT Core
 Contains code snippets to understand the use of *Cloud IoT Core* on **Google Cloud Platform** along with the use of *Cloud Pub/Sub* for MQTT. (Yet to explore)

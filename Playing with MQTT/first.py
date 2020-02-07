@@ -16,7 +16,7 @@ def on_log(client, userdata, level, buf):
 
 #creating a MQTT Client. 
 #Note: Client name must be unique
-client = mqtt.Client("Python1")
+client = mqtt.Client("MyClient")
 
 #mapping the user-defined callback functions
 client.on_connect = on_connect

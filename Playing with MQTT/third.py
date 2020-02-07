@@ -33,7 +33,7 @@ def on_message(client, userdata, msg):
     print(type(msg))
     
 
-client = mqtt.Client("Python1")
+client = mqtt.Client("MyClient")
 client.on_connect = on_connect
 #turning off logging
 #client.on_log = on_log

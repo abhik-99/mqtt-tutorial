@@ -16,7 +16,7 @@ def on_disconnect(client, userdata, flags, rc = 0):
 def on_log(client, userdata, level, buf):
     print("log",buf)
 
-client = mqtt.Client("Python1")
+client = mqtt.Client("MyClient")
 client.on_connect = on_connect
 client.on_log = on_log
 client.on_disconnect = on_disconnect
