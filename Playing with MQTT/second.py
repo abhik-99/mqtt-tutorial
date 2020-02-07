@@ -12,6 +12,7 @@ def on_connect(client, userdata, flags, rc):
 
 def on_disconnect(client, userdata, flags, rc = 0):
     print("Disconnect! Result Code",rc)
+
 def on_log(client, userdata, level, buf):
     print("log",buf)
 
@@ -25,6 +26,7 @@ print("Connecting to Broker",broker)
 client.connect(broker)
 client.loop_start()
 
+#publishing a "payload" 'hello world' to the topic "first/test" 
 client.publish("first/test","hello world!")
 time.sleep(4)
 
