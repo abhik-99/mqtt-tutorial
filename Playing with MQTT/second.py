@@ -24,8 +24,11 @@ client.on_disconnect = on_disconnect
 print("Connecting to Broker",broker)
 
 client.connect(broker)
-client.loop_start()
-
+client.loop_start()  #helps to view the output of the callbacks
+"""
+There is no actual structure to the topic. There can be any design of the topic
+like one similar to REST APIs or any custom structure. 
+"""
 #publishing a "payload" 'hello world' to the topic "first/test" 
 client.publish("first/test","hello world!")
 time.sleep(4)

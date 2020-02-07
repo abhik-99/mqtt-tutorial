@@ -25,9 +25,9 @@ client.on_log = on_log
 print("Connecting to Broker",broker)
 
 client.connect(broker)
-client.loop_start()
+#client.loop_start()
 
 time.sleep(4)
 
-client.loop_stop()
+#client.loop_stop()
 client.disconnect()

@@ -44,6 +44,13 @@ print("Connecting to Broker",broker)
 
 client.connect(broker)
 client.loop_start()
+"""
+We subscribe to the topic using our client. This is because once a message is 
+sent by the publisher, it is not stored usually by the broker (retain fields
+can help in storing the message temporarily).
+If there are not subscriber to the topic, it is discarded. So, we subscribe to the
+topic first to make sure that we receive the topic message
+"""
 #subscribing to the topic
 client.subscribe("first/test")
 #puclishing to the topic using our client
